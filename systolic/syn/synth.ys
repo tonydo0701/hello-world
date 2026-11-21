@@ -1,0 +1,9 @@
+# Generic gate-level synthesis of the 4x4 systolic array (no PDK needed).
+read_verilog -sv ../rtl/pe.v ../rtl/systolic_array.v
+chparam -set N 4 systolic_array
+synth -top systolic_array -flatten
+abc -g AND,NAND,OR,NOR,XOR,XNOR,MUX
+opt_clean
+rename -top systolic_array
+tee -o build/stats.txt stat
+write_verilog -noattr build/systolic_array_netlist.v
