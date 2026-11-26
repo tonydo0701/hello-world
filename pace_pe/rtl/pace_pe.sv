@@ -140,7 +140,7 @@ module pace_pe
   // ---------------------------------------------------------------------------
   // Memory-PE side band and debug
   // ---------------------------------------------------------------------------
-  assign agu_trigger = MEM_PE ? (cfg[B_AGU] && exec_en) : 1'b0;
+  assign agu_trigger = MEM_PE ? cfg[B_AGU] : 1'b0;   // raw; the array gates it with run state
   assign st_data     = MEM_PE ? op1_q : '0;
 
   assign dbg_pc         = pc_q;

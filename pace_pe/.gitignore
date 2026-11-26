@@ -1,3 +1,5 @@
 model/golden/target/
 build/
 scripts/__pycache__/
+soc/fw/firmware.*
+soc/fw/kernel.h

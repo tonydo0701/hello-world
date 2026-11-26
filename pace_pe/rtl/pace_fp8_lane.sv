@@ -23,7 +23,7 @@ module pace_fp8_lane (
     int        p, e;
     logic [17:0] sh, mask;
     logic [3:0]  top;
-    logic        g, st;
+    logic        gd, st;
     logic [3:0]  man;      // 3 bits + carry
     p = 0;
     for (int i = 0; i < 18; i++) if (m[i]) p = i;
@@ -33,17 +33,17 @@ module pace_fp8_lane (
     if (p >= 3) begin
       sh  = m >> (p - 3);
       top = sh[3:0];
-      g   = (p >= 4) ? m[p-4] : 1'b0;
+      gd  = (p >= 4) ? m[p-4] : 1'b0;
       mask = (18'h1 << (p - 4)) - 18'h1;
       st  = (p >= 5) ? |(m & mask) : 1'b0;
     end else begin
       sh  = m << (3 - p);
       top = sh[3:0];
-      g   = 1'b0;
+      gd  = 1'b0;
       st  = 1'b0;
     end
     man = {1'b0, top[2:0]};
-    if (g && (st || man[0])) begin
+    if (gd && (st || man[0])) begin
       man = man + 4'd1;
       if (man[3]) begin                       // mantissa overflow
         man = 4'd0;

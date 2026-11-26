@@ -15,6 +15,8 @@ use pace_sim::isa::{
     operation::OpCode,
     pe::PE,
 };
+use pace_sim::sim::grid::SimulationError;
+use pace_sim::sim::pace::PACESystem;
 use std::io::Write;
 
 fn hex64(s: &str) -> u64 {
@@ -86,6 +88,49 @@ fn main() {
                 pe.next_conf();
             }
         }
-        _ => eprintln!("usage: pace-pe-golden fp8 <out> | pe <prog> <inputs> <trace>"),
+        Some("grid") => {
+            // pace-pe-golden grid <folder> <max_cycles> <trace.txt> <dm_out_prefix>
+            // trace: one line per executed cycle, per PE (row-major) "pc op1 op2 res"
+            let dir = args[2].clone();
+            let mut grid = std::thread::Builder::new().stack_size(512 << 20)
+                .spawn(move || PACESystem::from_folder(&dir).to_grid()).unwrap().join().unwrap();
+            let max: usize = args[3].parse().unwrap();
+            let mut out = std::io::BufWriter::new(std::fs::File::create(&args[4]).unwrap());
+            let mut cyc = 0;
+            let mut ended = false;
+            while cyc < max {
+                let pcs: Vec<usize> = grid.pes.iter().flatten().map(|p| p.pc).collect();
+                match grid.simulate_cycle() {
+                    Ok(()) => {}
+                    Err(SimulationError::SimulationEnd) => { ended = true; break; }
+                    Err(SimulationError::PEUpdateError(i, e)) => panic!("cycle {cyc} PE({},{}): {e}", i.x, i.y),
+                }
+                // Align the observation point with the RTL: load data that pace-sim
+                // writes into op1 at the start of the next cycle is latched by the
+                // RTL at this clock edge. receive_mem_data is idempotent, so calling
+                // it here does not change the model's behaviour.
+                for y in 0..8 {
+                    for (x, d) in [(0usize, y / 2), (7usize, 4 + y / 2)] {
+                        let port = if y % 2 == 0 { &grid.dmems[d].port1 } else { &grid.dmems[d].port2 };
+                        let port = port.clone();
+                        grid.pes[y][x].receive_mem_data(&port);
+                    }
+                }
+                let mut line = String::new();
+                for (k, pe) in grid.pes.iter().flatten().enumerate() {
+                    let r = pe.regs;
+                    line.push_str(&format!("{:x} {:x} {:x} {:x} ", pcs[k], r.reg_op1, r.reg_op2, r.reg_res));
+                }
+                writeln!(out, "{}", line.trim_end()).unwrap();
+                grid.next_cycle();
+                cyc += 1;
+            }
+            for (i, dm) in grid.dmems.iter().enumerate() {
+                let mut f = std::fs::File::create(format!("{}{}", args[5], i)).unwrap();
+                for w in dm.to_u64_vec() { writeln!(f, "{:016x}", w).unwrap(); }
+            }
+            println!("cycles={} ended_by_agu={}", cyc, ended);
+        }
+        _ => eprintln!("usage: pace-pe-golden fp8 <out> | pe <prog> <inputs> <trace> | grid <dir> <max> <trace> <dm_prefix>"),
     }
 }
