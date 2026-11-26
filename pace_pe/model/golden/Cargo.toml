@@ -1,0 +1,8 @@
+[package]
+name = "pace-pe-golden"
+version = "0.1.0"
+edition = "2024"
+
+# Golden reference = ECO Lab's own behavioural model (pinned commit).
+[dependencies]
+pace-sim = { git = "https://github.com/ecolab-nus/pace-sim.git", rev = "549d4dd10d0d305b010a88296efaf73d585db639" }

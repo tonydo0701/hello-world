@@ -1,0 +1,3 @@
+model/golden/target/
+build/
+scripts/__pycache__/

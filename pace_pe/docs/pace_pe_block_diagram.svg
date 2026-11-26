@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1550 1040" width="1550" height="1040">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker><marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f4e9c"/></marker></defs>
+<rect x="0" y="0" width="1550" height="1040" rx="0" fill="#fff" stroke="none" stroke-width="0"/>
+<g transform="translate(70,0)">
+<rect x="95" y="34" width="1290" height="800" rx="6" fill="none" stroke="#000" stroke-width="2.4"/>
+<text x="110" y="58" font-family="Arial, Helvetica, sans-serif" font-size="17" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">PACE PE (re-created)</text>
+<text x="300" y="58" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">64b datapath · one configuration word per cycle · 1 of 8×8 array</text>
+<rect x="150" y="74" width="590" height="440" rx="4" fill="#dbe8f5" stroke="#000" stroke-width="1.4"/>
+<text x="162" y="94" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">ROUTER</text>
+<text x="232" y="94" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">(single-cycle multi-hop, 6 sources × 7 sinks)</text>
+<polyline points="-55,160 225,160" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="-55" y="154" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">N_in</text>
+<line x1="115" y1="166" x2="125" y2="154" stroke="#000" stroke-width="1.2"/>
+<text x="120" y="149" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<circle cx="225" cy="160" r="3.2" fill="#000"/>
+<polyline points="225,160 225,138 262,138" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="262" y="122" width="58" height="32" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="262,141 269,147 262,153" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="294.0" y="137.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">R_N</text>
+<text x="294.0" y="149.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64b</text>
+<polyline points="320,138 388,138" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polyline points="225,160 388,160" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polygon points="388,126 414,135.68 414,160.32 388,170" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<polyline points="414,148 488,148" fill="none" stroke="#000" stroke-width="1.6"/>
+<text x="244" y="175" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#1f4e9c">we[N]</text>
+<text x="372" y="180" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#1f4e9c">byp[N]</text>
+<polyline points="-55,220 225,220" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="-55" y="214" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">S_in</text>
+<line x1="115" y1="226" x2="125" y2="214" stroke="#000" stroke-width="1.2"/>
+<text x="120" y="209" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<circle cx="225" cy="220" r="3.2" fill="#000"/>
+<polyline points="225,220 225,198 262,198" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="262" y="182" width="58" height="32" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="262,201 269,207 262,213" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="294.0" y="197.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">R_S</text>
+<text x="294.0" y="209.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64b</text>
+<polyline points="320,198 388,198" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polyline points="225,220 388,220" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polygon points="388,186 414,195.68 414,220.32 388,230" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<polyline points="414,208 488,208" fill="none" stroke="#000" stroke-width="1.6"/>
+<text x="244" y="235" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#1f4e9c">we[S]</text>
+<text x="372" y="240" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#1f4e9c">byp[S]</text>
+<polyline points="-55,280 225,280" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="-55" y="274" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">W_in</text>
+<line x1="115" y1="286" x2="125" y2="274" stroke="#000" stroke-width="1.2"/>
+<text x="120" y="269" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<circle cx="225" cy="280" r="3.2" fill="#000"/>
+<polyline points="225,280 225,258 262,258" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="262" y="242" width="58" height="32" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="262,261 269,267 262,273" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="294.0" y="257.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">R_W</text>
+<text x="294.0" y="269.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64b</text>
+<polyline points="320,258 388,258" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polyline points="225,280 388,280" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polygon points="388,246 414,255.68 414,280.32 388,290" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<polyline points="414,268 488,268" fill="none" stroke="#000" stroke-width="1.6"/>
+<text x="244" y="295" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#1f4e9c">we[W]</text>
+<text x="372" y="300" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#1f4e9c">byp[W]</text>
+<polyline points="-55,340 225,340" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="-55" y="334" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">E_in</text>
+<line x1="115" y1="346" x2="125" y2="334" stroke="#000" stroke-width="1.2"/>
+<text x="120" y="329" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<circle cx="225" cy="340" r="3.2" fill="#000"/>
+<polyline points="225,340 225,318 262,318" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="262" y="302" width="58" height="32" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="262,321 269,327 262,333" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="294.0" y="317.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">R_E</text>
+<text x="294.0" y="329.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64b</text>
+<polyline points="320,318 388,318" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polyline points="225,340 388,340" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polygon points="388,306 414,315.68 414,340.32 388,350" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<polyline points="414,328 488,328" fill="none" stroke="#000" stroke-width="1.6"/>
+<text x="244" y="355" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#1f4e9c">we[E]</text>
+<text x="372" y="360" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#1f4e9c">byp[E]</text>
+<text x="-55" y="384" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">from N/S/W/E</text>
+<text x="-55" y="398" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">neighbour PEs</text>
+<text x="165" y="470" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">R_x: input (“parking”) registers, write-enable we[x];</text>
+<text x="165" y="484" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">bypass mux selects register (byp=1) or live wire (byp=0).</text>
+<rect x="468" y="104" width="250" height="398" rx="0" fill="#f4f9fe" stroke="#000" stroke-width="1.3"/>
+<text x="600" y="122" font-family="Arial, Helvetica, sans-serif" font-size="12.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">CROSSBAR</text>
+<text x="600" y="135" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">7 × (6:1 + open) mux, 3b select each</text>
+<line x1="488" y1="142" x2="488" y2="492" stroke="#000" stroke-width="3"/>
+<polyline points="488,174 560,174" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="519" y1="180" x2="529" y2="168" stroke="#000" stroke-width="1.2"/>
+<text x="524" y="165" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">6</text>
+<polygon points="560,160 590,166.16 590,181.84 560,188" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="596" y="169" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">E_out</text>
+<polyline points="488,218 560,218" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="519" y1="224" x2="529" y2="212" stroke="#000" stroke-width="1.2"/>
+<text x="524" y="209" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">6</text>
+<polygon points="560,204 590,210.16 590,225.84 560,232" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="596" y="213" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">S_out</text>
+<polyline points="488,262 560,262" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="519" y1="268" x2="529" y2="256" stroke="#000" stroke-width="1.2"/>
+<text x="524" y="253" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">6</text>
+<polygon points="560,248 590,254.16 590,269.84 560,276" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="596" y="257" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">W_out</text>
+<polyline points="488,306 560,306" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="519" y1="312" x2="529" y2="300" stroke="#000" stroke-width="1.2"/>
+<text x="524" y="297" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">6</text>
+<polygon points="560,292 590,298.16 590,313.84 560,320" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="596" y="301" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">N_out</text>
+<polyline points="488,350 560,350" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="519" y1="356" x2="529" y2="344" stroke="#000" stroke-width="1.2"/>
+<text x="524" y="341" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">6</text>
+<polygon points="560,336 590,342.16 590,357.84 560,364" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="596" y="345" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">op1</text>
+<polyline points="488,394 560,394" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="519" y1="400" x2="529" y2="388" stroke="#000" stroke-width="1.2"/>
+<text x="524" y="385" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">6</text>
+<polygon points="560,380 590,386.16 590,401.84 560,408" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="596" y="389" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">op2</text>
+<polyline points="488,438 560,438" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="519" y1="444" x2="529" y2="432" stroke="#000" stroke-width="1.2"/>
+<text x="524" y="429" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">6</text>
+<polygon points="560,424 590,430.16 590,445.84 560,452" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="596" y="433" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">pred</text>
+<text x="700" y="494" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="end" font-weight="normal" font-style="normal" fill="#1f4e9c">sel[20:0]</text>
+<polyline points="590,174 1460,174" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="1295" y1="180" x2="1305" y2="168" stroke="#000" stroke-width="1.2"/>
+<text x="1300" y="163" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<text x="1395" y="168" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">E_out</text>
+<polyline points="590,218 1460,218" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="1295" y1="224" x2="1305" y2="212" stroke="#000" stroke-width="1.2"/>
+<text x="1300" y="207" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<text x="1395" y="212" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">S_out</text>
+<polyline points="590,262 1460,262" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="1295" y1="268" x2="1305" y2="256" stroke="#000" stroke-width="1.2"/>
+<text x="1300" y="251" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<text x="1395" y="256" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">W_out</text>
+<polyline points="590,306 1460,306" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="1295" y1="312" x2="1305" y2="300" stroke="#000" stroke-width="1.2"/>
+<text x="1300" y="295" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<text x="1395" y="300" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">N_out</text>
+<text x="1395" y="330" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">to N/S/W/E</text>
+<text x="1395" y="344" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">neighbour PEs</text>
+<rect x="760" y="104" width="520" height="36" rx="3" fill="#fffbe6" stroke="#b08900" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="770" y="119" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Mesh outputs are combinational (not registered): N/S/W/E_in → *_out within the</text>
+<text x="770" y="133" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">same cycle, so one value can traverse several PEs per clock (HyCUBE / SMART bypass).</text>
+<rect x="760" y="326" width="600" height="238" rx="4" fill="#fde3c4" stroke="#000" stroke-width="1.4"/>
+<text x="1348" y="346" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="end" font-weight="bold" font-style="normal" fill="#000">ALU DATAPATH</text>
+<polyline points="590,350 790,350" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polygon points="790,328 812,336.8 812,359.2 790,368" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="801" y="382" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#1f4e9c">ld_v</text>
+<polyline points="812,348 836,348" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="836" y="331" width="56" height="34" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="836,352 843,358 836,364" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="867.0" y="347.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">OP1</text>
+<text x="867.0" y="359.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64b</text>
+<polyline points="590,394 836,394" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="836" y="377" width="56" height="34" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="836,398 843,404 836,410" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="867.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">OP2</text>
+<text x="867.0" y="405.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64b</text>
+<polyline points="590,438 720,438" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="3 3" marker-end="url(#ah)"/>
+<text x="724" y="442" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">rsvd</text>
+<polyline points="892,394 930,394" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polygon points="930,369 952,378.68 952,403.32 930,413" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="941" y="427" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#1f4e9c">imm_v</text>
+<rect x="990" y="356" width="220" height="166" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1100" y="373" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">EXECUTE</text>
+<rect x="1000" y="380" width="200" height="72" rx="0" fill="#fff7ee" stroke="#000" stroke-width="1"/>
+<text x="1100" y="395" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">INT16 scalar</text>
+<text x="1100" y="409" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">ADD SUB MULT DIV LS RS ASR</text>
+<text x="1100" y="421" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">AND OR XOR SEL CMERGE</text>
+<text x="1100" y="433" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">CMP CLT CGT</text>
+<text x="1100" y="446" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="italic" fill="#000">op1[15:0] ∘ (imm16 | op2[15:0])</text>
+<rect x="1000" y="458" width="200" height="58" rx="0" fill="#fff7ee" stroke="#000" stroke-width="1"/>
+<text x="1100" y="472" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">8 × FP8 E4M3 SIMD</text>
+<rect x="1010" y="478" width="19" height="15" rx="0" fill="#fff" stroke="#000" stroke-width="0.9"/>
+<text x="1019.5" y="489.5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">0</text>
+<rect x="1033" y="478" width="19" height="15" rx="0" fill="#fff" stroke="#000" stroke-width="0.9"/>
+<text x="1042.5" y="489.5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">1</text>
+<rect x="1056" y="478" width="19" height="15" rx="0" fill="#fff" stroke="#000" stroke-width="0.9"/>
+<text x="1065.5" y="489.5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">2</text>
+<rect x="1079" y="478" width="19" height="15" rx="0" fill="#fff" stroke="#000" stroke-width="0.9"/>
+<text x="1088.5" y="489.5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">3</text>
+<rect x="1102" y="478" width="19" height="15" rx="0" fill="#fff" stroke="#000" stroke-width="0.9"/>
+<text x="1111.5" y="489.5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">4</text>
+<rect x="1125" y="478" width="19" height="15" rx="0" fill="#fff" stroke="#000" stroke-width="0.9"/>
+<text x="1134.5" y="489.5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">5</text>
+<rect x="1148" y="478" width="19" height="15" rx="0" fill="#fff" stroke="#000" stroke-width="0.9"/>
+<text x="1157.5" y="489.5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">6</text>
+<rect x="1171" y="478" width="19" height="15" rx="0" fill="#fff" stroke="#000" stroke-width="0.9"/>
+<text x="1180.5" y="489.5" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">7</text>
+<text x="1100" y="509" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">VADD  VMUL  ·  RNE  ·  flush-to-zero</text>
+<polyline points="892,348 972,348 972,404 1000,404" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="935" y1="354" x2="945" y2="342" stroke="#000" stroke-width="1.2"/>
+<text x="940" y="337" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<polyline points="952,391 980,391 980,418 1000,418" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="966" y="385" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">16</text>
+<polyline points="902,402 902,402" fill="none" stroke="#000" stroke-width="1.6"/>
+<circle cx="912" cy="348" r="3.2" fill="#000"/>
+<polyline points="912,348 912,486 1000,486" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#ah)"/>
+<circle cx="918" cy="394" r="3.2" fill="#000"/>
+<polyline points="918,394 918,500 1000,500" fill="none" stroke="#000" stroke-width="1.3" marker-end="url(#ah)"/>
+<polyline points="1210,440 1262,440" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="1236" y="428" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">alu_out</text>
+<circle cx="1248" cy="440" r="3.2" fill="#000"/>
+<rect x="1262" y="423" width="60" height="34" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="1262,444 1269,450 1262,456" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="1295.0" y="439.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">RES</text>
+<text x="1295.0" y="451.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64b</text>
+<text x="1292" y="474" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#1f4e9c">upd_res</text>
+<polyline points="1248,440 1248,534 478,534 478,504" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="800" y="529" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">ALU_out (same cycle)</text>
+<polyline points="1322,440 1345,440 1345,550 498,550 498,504" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="1000" y="545" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">ALU_res (registered)</text>
+<rect x="150" y="590" width="820" height="228" rx="4" fill="#e0efd6" stroke="#000" stroke-width="1.4"/>
+<text x="162" y="610" font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">CONTROL</text>
+<rect x="175" y="624" width="230" height="180" rx="0" fill="#ececec" stroke="#000" stroke-width="1.3"/>
+<text x="290" y="642" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">CONFIG MEMORY</text>
+<text x="290" y="656" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">16 × 64b = 1 Kb (128 B)</text>
+<rect x="200" y="664" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="672" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="680" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="688" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="696" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="704" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="712" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="720" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="728" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="736" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="744" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="752" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="760" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="768" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="776" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<rect x="200" y="784" width="170" height="8" rx="0" fill="#fff" stroke="#555" stroke-width="0.6"/>
+<text x="196" y="671" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">0</text>
+<text x="196" y="791" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">15</text>
+<polyline points="-55,689 198,689" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="-55" y="674" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">host / QSPI loader</text>
+<text x="-55" y="706" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">we, addr[3:0],</text>
+<text x="-55" y="719" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">wdata[63:0]</text>
+<rect x="450" y="630" width="210" height="112" rx="0" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="555" y="648" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">PC / LOOP CTRL</text>
+<rect x="462" y="658" width="50" height="32" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="462,677 469,683 462,689" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="490.0" y="673.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">PC</text>
+<text x="490.0" y="685.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">4b</text>
+<rect x="522" y="658" width="62" height="32" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="522,677 529,683 522,689" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="556.0" y="673.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">L_start</text>
+<text x="556.0" y="685.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">5b</text>
+<rect x="592" y="658" width="58" height="32" rx="0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<polyline points="592,677 599,683 592,689" fill="none" stroke="#000" stroke-width="1.1"/>
+<text x="624.0" y="673.0" font-family="Arial, Helvetica, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">L_end</text>
+<text x="624.0" y="685.0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">5b</text>
+<text x="555" y="708" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">JUMP (first cycle): pc ← dst</text>
+<text x="555" y="721" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">pc ≥ end or pc &lt; start: pc ← start</text>
+<text x="555" y="734" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">else: pc ← pc + 1</text>
+<polyline points="462,674 372,674" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="414" y1="679" x2="426" y2="669" stroke="#000" stroke-width="1.2"/>
+<text x="429" y="678" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">4</text>
+<text x="426" y="667" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">addr</text>
+<polyline points="370,778 720,778" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="545" y="772" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">cfg[63:0]</text>
+<line x1="465" y1="784" x2="475" y2="772" stroke="#000" stroke-width="1.2"/>
+<text x="470" y="767" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">64</text>
+<rect x="720" y="630" width="230" height="176" rx="0" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="835" y="648" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">DECODER</text>
+<text x="732" y="668" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">opcode[34:30]   imm16[50:35]</text>
+<text x="732" y="686" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">imm_v[62]   upd_res[25]   AGU[59]</text>
+<text x="732" y="704" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">switch sel[20:0] = 7 × 3b</text>
+<text x="732" y="722" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">bypass[24:21]   we[29:26]</text>
+<text x="732" y="740" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">JUMP: dst[49:45]  end[44:40]</text>
+<text x="732" y="758" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">           start[39:35]</text>
+<text x="732" y="776" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">reserved: [63] [61] [60]</text>
+<polyline points="720,726 662,726" fill="none" stroke="#1f4e9c" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#ahb)"/>
+<text x="691" y="720" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" font-style="normal" fill="#1f4e9c">jump</text>
+<polyline points="800,630 800,572 660,572 660,504" fill="none" stroke="#1f4e9c" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#ahb)"/>
+<text x="666" y="566" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#1f4e9c">sel 21b</text>
+<polyline points="770,630 770,580 401,580 401,352" fill="none" stroke="#1f4e9c" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#ahb)"/>
+<text x="408" y="574" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#1f4e9c">byp 4b · we 4b</text>
+<polyline points="930,630 930,576 1100,576 1100,524" fill="none" stroke="#1f4e9c" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#ahb)"/>
+<text x="1108" y="590" font-family="Arial, Helvetica, sans-serif" font-size="9.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#1f4e9c">opcode · imm16 · imm_v · upd_res</text>
+<rect x="1000" y="634" width="360" height="170" rx="4" fill="#fff" stroke="#000" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="1012" y="654" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">MEMORY-PE SIDE BAND</text>
+<text x="1012" y="669" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">(edge columns 0 and 7 only, MEM_PE = 1)</text>
+<text x="1012" y="700" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">AGU trigger ← cfg[59]</text>
+<text x="1012" y="730" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">st_data ← OP1</text>
+<text x="1012" y="760" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">ld_data, ld_v → OP1 mux</text>
+<polyline points="1200,696 1460,696" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polyline points="1200,726 1460,726" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<polyline points="1460,756 1222,756" fill="none" stroke="#000" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="1395" y="688" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">to AGU</text>
+<text x="1395" y="748" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">8 KB DMEM</text>
+<text x="1012" y="788" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="italic" fill="#000">2-cycle load latency is handled by AGU / DMEM</text>
+<text x="120" y="868" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">Configuration word (64b, one per cycle)</text>
+<rect x="120.0" y="880" width="19.5" height="28" rx="0" fill="#eee" stroke="#000" stroke-width="1"/>
+<text x="129.75" y="898" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">P</text>
+<text x="122.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">63</text>
+<rect x="139.5" y="880" width="19.5" height="28" rx="0" fill="#fde3c4" stroke="#000" stroke-width="1"/>
+<text x="149.25" y="898" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">I</text>
+<text x="141.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">62</text>
+<rect x="159.0" y="880" width="19.5" height="28" rx="0" fill="#eee" stroke="#000" stroke-width="1"/>
+<text x="168.75" y="898" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">F</text>
+<text x="161.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">61</text>
+<rect x="178.5" y="880" width="19.5" height="28" rx="0" fill="#eee" stroke="#000" stroke-width="1"/>
+<text x="188.25" y="898" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">B</text>
+<text x="180.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">60</text>
+<rect x="198.0" y="880" width="19.5" height="28" rx="0" fill="#ececec" stroke="#000" stroke-width="1"/>
+<text x="207.75" y="898" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">A</text>
+<text x="200.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">59</text>
+<rect x="217.5" y="880" width="156.0" height="28" rx="0" fill="#fff" stroke="#000" stroke-width="1"/>
+<text x="295.5" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">unused</text>
+<text x="219.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">58</text>
+<text x="371.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">51</text>
+<rect x="373.5" y="880" width="312.0" height="28" rx="0" fill="#fde3c4" stroke="#000" stroke-width="1"/>
+<text x="529.5" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">imm16</text>
+<text x="375.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">50</text>
+<text x="683.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">35</text>
+<rect x="685.5" y="880" width="97.5" height="28" rx="0" fill="#fde3c4" stroke="#000" stroke-width="1"/>
+<text x="734.25" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">opcode</text>
+<text x="687.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">34</text>
+<text x="781.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">30</text>
+<rect x="783.0" y="880" width="78.0" height="28" rx="0" fill="#dbe8f5" stroke="#000" stroke-width="1"/>
+<text x="822.0" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">we</text>
+<text x="785.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">29</text>
+<text x="859.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">26</text>
+<rect x="861.0" y="880" width="19.5" height="28" rx="0" fill="#fde3c4" stroke="#000" stroke-width="1"/>
+<text x="870.75" y="898" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">U</text>
+<text x="863.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">25</text>
+<rect x="880.5" y="880" width="78.0" height="28" rx="0" fill="#dbe8f5" stroke="#000" stroke-width="1"/>
+<text x="919.5" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">byp</text>
+<text x="882.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">24</text>
+<text x="956.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">21</text>
+<rect x="958.5" y="880" width="58.5" height="28" rx="0" fill="#dbe8f5" stroke="#000" stroke-width="1"/>
+<text x="987.75" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">pred</text>
+<text x="960.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">20</text>
+<text x="1015.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">18</text>
+<rect x="1017.0" y="880" width="58.5" height="28" rx="0" fill="#dbe8f5" stroke="#000" stroke-width="1"/>
+<text x="1046.25" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">op2</text>
+<text x="1019.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">17</text>
+<text x="1073.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">15</text>
+<rect x="1075.5" y="880" width="58.5" height="28" rx="0" fill="#dbe8f5" stroke="#000" stroke-width="1"/>
+<text x="1104.75" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">op1</text>
+<text x="1077.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">14</text>
+<text x="1132.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">12</text>
+<rect x="1134.0" y="880" width="58.5" height="28" rx="0" fill="#dbe8f5" stroke="#000" stroke-width="1"/>
+<text x="1163.25" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">N</text>
+<text x="1136.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">11</text>
+<text x="1190.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">9</text>
+<rect x="1192.5" y="880" width="58.5" height="28" rx="0" fill="#dbe8f5" stroke="#000" stroke-width="1"/>
+<text x="1221.75" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">W</text>
+<text x="1194.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">8</text>
+<text x="1249.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">6</text>
+<rect x="1251.0" y="880" width="58.5" height="28" rx="0" fill="#dbe8f5" stroke="#000" stroke-width="1"/>
+<text x="1280.25" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">S</text>
+<text x="1253.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">5</text>
+<text x="1307.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">3</text>
+<rect x="1309.5" y="880" width="58.5" height="28" rx="0" fill="#dbe8f5" stroke="#000" stroke-width="1"/>
+<text x="1338.75" y="898" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">E</text>
+<text x="1311.5" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">2</text>
+<text x="1366.0" y="920" font-family="Arial, Helvetica, sans-serif" font-size="8.5" text-anchor="end" font-weight="normal" font-style="normal" fill="#000">0</text>
+<text x="367.5" y="947" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="end" font-weight="bold" font-style="normal" fill="#000">JUMP:</text>
+<rect x="373.5" y="930" width="19.5" height="24" rx="0" fill="#e0efd6" stroke="#000" stroke-width="1"/>
+<text x="383.25" y="947" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">–</text>
+<rect x="393.0" y="930" width="97.5" height="24" rx="0" fill="#e0efd6" stroke="#000" stroke-width="1"/>
+<text x="441.75" y="947" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">dst</text>
+<rect x="490.5" y="930" width="97.5" height="24" rx="0" fill="#e0efd6" stroke="#000" stroke-width="1"/>
+<text x="539.25" y="947" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">end</text>
+<rect x="588.0" y="930" width="97.5" height="24" rx="0" fill="#e0efd6" stroke="#000" stroke-width="1"/>
+<text x="636.75" y="947" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">start</text>
+<text x="120" y="976" font-family="Arial, Helvetica, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">P pred (rsvd) · I imm-valid · F use-float (rsvd) · B ALU-bypass (rsvd) · A AGU trigger · U update RES · switch codes: 0 E_in, 1 S_in, 2 W_in, 3 N_in, 4 ALU_out, 5 ALU_res, 7 open</text>
+</g>
+<text x="775.0" y="1026" font-family="Arial, Helvetica, sans-serif" font-size="12.5" text-anchor="middle" font-weight="normal" font-style="italic" fill="#000">Fig. 1. Re-created PACE processing element: 16 × 64b configuration memory with loop/PC controller, 6 × 7 single-cycle multi-hop router with four parking registers, and 16b INT + 8 × FP8 SIMD ALU.</text>
+</svg>
